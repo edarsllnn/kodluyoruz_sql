@@ -1,0 +1,19 @@
+#DATABASE = dvdrental
+
+#1
+select country from country
+where country LIKE 'A%' and country LIKE '%a'
+
+#2
+select country from country
+where length(country) >= 6 and country LIKE '%n'
+
+#3
+SELECT title 
+FROM film 
+WHERE LOWER(title) LIKE '%t%'
+
+#4
+select * from film
+where title LIKE 'C%' and length >= 90 and rental_rate = 2.99
+
